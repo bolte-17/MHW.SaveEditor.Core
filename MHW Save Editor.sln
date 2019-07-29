@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHW.SaveEditor.Core", "MHW.SaveEditor.Core\MHW.SaveEditor.Core.csproj", "{63AD90AB-FB75-42B4-86D0-243844290F9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHW.SaveEditor.Test", "MHW.SaveEditor.Test\MHW.SaveEditor.Test.csproj", "{ABD090BE-24E4-4790-95FF-7A2FAA7A2810}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63AD90AB-FB75-42B4-86D0-243844290F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AD90AB-FB75-42B4-86D0-243844290F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AD90AB-FB75-42B4-86D0-243844290F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AD90AB-FB75-42B4-86D0-243844290F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD090BE-24E4-4790-95FF-7A2FAA7A2810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD090BE-24E4-4790-95FF-7A2FAA7A2810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD090BE-24E4-4790-95FF-7A2FAA7A2810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD090BE-24E4-4790-95FF-7A2FAA7A2810}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C113E26B-0BA0-4CD6-8F71-F430B5296D17}
+	EndGlobalSection
+EndGlobal
