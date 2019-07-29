@@ -18,12 +18,12 @@ namespace MHW.SaveEditor.Test
 
   public class TestSavesFixture
   {
-    public IDictionary<TestSave, SaveFile> TestSaves = new[] {
+    public IDictionary<TestSave, SaveFile> TestSaves = (new[] {
       (TestSave.NewGame, "HR1"),
       (TestSave.PostXeno, "HR16"),
       (TestSave.Endgame1, "HR100"),
       (TestSave.Endgame2, "HR116"),
-    }.ToDictionary(x => x.Item1, x => {
+    }).ToDictionary(x => x.Item1, x => {
       var (key, folderName) = x;
       return new SaveFile(File.ReadAllBytes($"TestSaves/{folderName}/SAVEDATA1000"));
     });
