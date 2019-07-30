@@ -28,6 +28,11 @@ steps:
     version: '3.0.100-preview7-012821'
     includePreviewVersions: true
 - task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'a69365f5-a184-4703-9b5a-ba364b20a2b1'
+- task: DotNetCoreCLI@2
   displayName: Build
   inputs:
     command: build
