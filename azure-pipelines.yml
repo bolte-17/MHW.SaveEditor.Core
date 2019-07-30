@@ -43,7 +43,7 @@ steps:
     command: 'pack'
     packagesToPack: 'MHW.SaveEditor.Core/*.csproj'
     versioningScheme: 'byEnvVar'
-    versionEnvVar: 'NuGetVersionV2'
+    versionEnvVar: 'GitVersion.NuGetVersionV2'
 - task: NuGetCommand@2
   inputs:
     command: 'push'
