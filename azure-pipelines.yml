@@ -19,6 +19,9 @@ steps:
   displayName: 'Install .net core 3.0 (preview)'
   inputs:
     version: '3.0.100-preview7-012821'
+- task: GitVersion@5
+  inputs:
+    runtime: 'core'
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
@@ -30,3 +33,15 @@ steps:
     command: test
     projects: '**/*Test/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'MHW.SaveEditor.Core/*.csproj'
+    versioningScheme: 'byEnvVar'
+    versionEnvVar: 'NuGetVersionV2'
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'a69365f5-a184-4703-9b5a-ba364b20a2b1'
